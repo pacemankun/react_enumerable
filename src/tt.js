@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: liukun
  * @Date: 2022-05-28 13:17:19
- * @LastEditTime: 2022-05-28 16:20:55
- * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
+ * @LastEditTime: 2022-05-31 21:18:48
+ * @LastEditors: liukun liukun0227@163.com
  */
 new Date().getUTCSeconds();
