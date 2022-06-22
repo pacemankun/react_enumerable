@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: liukun
  * @Date: 2022-06-06 17:41:27
- * @LastEditTime: 2022-06-06 18:40:19
+ * @LastEditTime: 2022-06-22 11:28:19
  * @LastEditors: liukun liukun0227@163.com
  */
 import { legacy_createStore as createStore } from "redux";
@@ -19,5 +19,6 @@ const counterReducer = (state = 0, action) => {
       return state;
   }
 };
+export { counterReducer };
 const store = createStore(counterReducer);
 export default store;
