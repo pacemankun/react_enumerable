@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: liukun
  * @Date: 2022-06-05 10:00:34
- * @LastEditTime: 2022-06-22 11:30:23
+ * @LastEditTime: 2022-06-22 17:23:01
  * @LastEditors: liukun liukun0227@163.com
  */
 import React, { useState, useEffect, useReducer } from "react";
@@ -17,7 +17,7 @@ export default function FunctionComponent(props) {
   }
   useEffect(() => {
     //副作⽤
-    console.warn("userEffect");
+    console.warn("userEffect2");
     const timer = setInterval(() => {
       setDate(new Date());
     }, 1000);
