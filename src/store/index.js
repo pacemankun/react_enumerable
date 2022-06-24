@@ -3,10 +3,10 @@
  * @version: 1.0.0
  * @Author: liukun
  * @Date: 2022-06-06 17:41:27
- * @LastEditTime: 2022-06-22 11:28:19
+ * @LastEditTime: 2022-06-23 17:39:02
  * @LastEditors: liukun liukun0227@163.com
  */
-import { legacy_createStore as createStore } from "redux";
+import { legacy_createStore as createStore, combineReducers } from "redux";
 // https://blog.csdn.net/weixin_63896561/article/details/124669183
 
 const counterReducer = (state = 0, action) => {
@@ -20,5 +20,5 @@ const counterReducer = (state = 0, action) => {
   }
 };
 export { counterReducer };
-const store = createStore(counterReducer);
+const store = createStore(combineReducers({ count: counterReducer }));
 export default store;

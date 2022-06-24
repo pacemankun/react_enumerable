@@ -3,11 +3,11 @@
  * @version: 1.0.0
  * @Author: liukun
  * @Date: 2022-06-08 10:25:37
- * @LastEditTime: 2022-06-08 10:46:42
+ * @LastEditTime: 2022-06-23 20:17:55
  * @LastEditors: liukun liukun0227@163.com
  */
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 export default class RouterPage extends Component {
   render() {
     return (
@@ -16,7 +16,7 @@ export default class RouterPage extends Component {
         <Router>
           <Link to="/">⾸⻚</Link> <Link to="/user">⽤户中⼼</Link>
           {/* 根路由要添加exact，实现精确匹配 */}
-          <Switch>
+          <Routes>
             <Route
               exact
               path="/"
@@ -25,7 +25,7 @@ export default class RouterPage extends Component {
               //render={() => <div>render</div>}
             />
             <Route path="/user" component={UserPage} />
-          </Switch>
+          </Routes>
         </Router>
       </div>
     );
