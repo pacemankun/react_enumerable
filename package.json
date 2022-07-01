@@ -2,6 +2,9 @@
   "name": "lk_react",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",

@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: liukun
  * @Date: 2022-06-05 09:23:33
- * @LastEditTime: 2022-06-30 18:55:21
+ * @LastEditTime: 2022-06-30 22:23:42
  * @LastEditors: liukun liukun0227@163.com
  */
 import React from "react";
@@ -28,7 +28,7 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
-console.info(React.version, App);
+// console.info(React.version, App);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
