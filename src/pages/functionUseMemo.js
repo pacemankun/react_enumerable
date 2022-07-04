@@ -3,18 +3,21 @@
  * @version: 1.0.0
  * @Author: liukun
  * @Date: 2022-06-11 10:36:19
- * @LastEditTime: 2022-06-11 12:52:38
+ * @LastEditTime: 2022-07-02 16:12:23
  * @LastEditors: liukun liukun0227@163.com
  */
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 export default function UseMemoPage(props) {
   const [count, setCount] = useState(0);
-  const expensive = useMemo(() => {
-    console.log("compute");
+  const expensive = useMemo(fn, [count]);
+  function fn() {
+    console.log("useMemo");
     let sum = 0;
     return (sum += count);
-    //只有count变化，才重新计算赋值
-  }, [count]);
+  }
+  useEffect(() => {
+    console.warn("render");
+  });
   const [value, setValue] = useState("");
   return (
     <div>
